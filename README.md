@@ -1,9 +1,6 @@
-<center>
+<img src="img/latch_library_logo.jpg" alt="logo" width="200"/>
 
-# Latch Library <br /> <img src="img/latch_library_logo.jpg" alt="logo" width="200"/>
-
-</center>
-
+<br />
 
 >"The only thing that you absolutely have to know, is the location of the library." - Albert Einstein 
 
@@ -13,7 +10,7 @@ There are common snippets of code used across diverse workflows in the [LatchBio
 
 <br />
 
-Join the Slack community! 
+To join the Slack community, send [Kenny Workman](https://github.com/kennyworkman) a direct message.
 
 [![SLACK](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://twitter.com/LatchBio/status/1527781165783867392)
 
