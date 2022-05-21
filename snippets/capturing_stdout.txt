@@ -1,0 +1,16 @@
+import subprocess
+
+input_file = "input_file"
+output_file = "output_file"
+
+# command for subprocess
+_cmd = [
+    "biokit",
+    "gw_rscu",
+    input_file
+]
+
+with open(output_file, "w") as f:
+    subprocess.call(_cmd, stdout=f)
+
+return LatchFile(str(output_file), f"latch:///{output_file}")

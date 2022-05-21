@@ -1,0 +1,23 @@
+@small_task
+def a_small_task(
+    input: LatchFile,
+    output_dir: LatchDir,
+    ) -> LatchDir:
+
+output_prefix = "output_files_prefix"
+
+# directory of output
+local_dir = "/root/directory_of_returned_results/" 
+
+# 
+local_prefix = os.path.join(local_dir, output_prefix)
+
+# command
+_cmd = [
+    "command",
+    "input",
+    str(local_prefix)
+]
+
+subprocess.run(_cmd)
+return LatchDir(local_dir, output_dir.remote_path)
