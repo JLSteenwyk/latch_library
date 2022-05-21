@@ -21,17 +21,8 @@ Join the Slack community!
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [Genome Assembly](#genome-assembly)
-  - [De novo](#de-novo)
-  - [Metrics](#metrics)
-- [Multiple sequence alignment](#multiple-sequence-alignment)
-  - [Align](#align)
-  - [Trimming](#trimming)
-  - [Summary statistics](#summary-statistics)
-- [Phylogenetics](#phylogenetics)
-  - [Phylogenetic inference](#phylogenetic-inference)
-- [Codon analyses](#codon-analyses)
-  - [Optimization](#optimization)
+- [I/O operations](#io-operations)
+  - [Writing out stdout](#writing-out-stdout)
 - [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
