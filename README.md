@@ -4,13 +4,9 @@
 
 >"The only thing that you absolutely have to know, is the location of the library." - Albert Einstein 
 
-<br />
-
 ### Mission
 
 There are common snippets of code used across diverse workflows in the [LatchBio SDK](https://console.latch.bio/explore). This community-led encyclopedia aims to catalog common code snippets and save developer time. Please feel free to [contribute](CONTRIBUTING.md)!
-
-<br />
 
 ### Join the community!
 Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community, send [Kenny Workman](https://github.com/kennyworkman) a direct message.
