@@ -36,7 +36,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 
 - **capturing stdout**
     - bioinformaticians are frequently captured the stdout using the `>` character from one software to feed into another. Use this code snippet for writing the stdout to a file and returning the output.
-    - [snippet](snippets/capturing_stdout.py) | [example code](https://github.com/JLSteenwyk/latch_wf_codon_optimization/blob/main/wf/__init__.py)
+    - [snippet](snippets/capturing_stdout.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_codon_optimization)
 
 <br />
 
