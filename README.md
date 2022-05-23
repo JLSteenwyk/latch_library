@@ -36,6 +36,16 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 
 #### Installing packages and software
 
+- **Installing Miniconda**
+  - Anaconda is an extremely useful open source package and environment management system
+  - To install it from a Dockerfile, paste the instruction in the installing_conda.txt file inside your Dockerfile
+  - The commands in the text execute the following tasks:
+    - download and install miniconda in the indicated folder
+    - add the conda binary to the $PATH
+  - Conda can now be used normally (e.g conda install samtools)
+  - [snippet](snippets/installing_conda.txt) | [example code](Coming soon)
+  - Snippet by: [Matteo Bolner](https://github.com/matteobolner)
+
 - **Installing from PyPi**
   - Popular software used by bioinformaticians are distributed via PyPi and can easily be incorporated into LatchBio workflows.
   - To do so, create a `requirements.txt` that details the packages to download in the same directory as your `Dockerfile`. Next, add `COPY requirements.txt requirements.txt; RUN pip install -r requirements.txt` to your `Dockerfile`.
