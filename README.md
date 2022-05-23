@@ -34,7 +34,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 
 ### Dockerfile snippets
 
-#### Installing packages from pypi
+#### Installing packages and software
 
 - **Installing from PyPi**
   - Popular software used by bioinformaticians are distributed via PyPi and can easily be incorporated into LatchBio workflows.
