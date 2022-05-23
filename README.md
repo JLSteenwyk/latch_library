@@ -22,6 +22,8 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
+- [Dockerfile snippets](#dockerfile-snippets)
+  - [Installing packages from pypi](#installing-packages-from-pypi)
 - [I/O operations](#io-operations)
   - [Writing out stdout](#writing-out-stdout)
 - [Contributors](#contributors)
