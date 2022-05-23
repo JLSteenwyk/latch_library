@@ -40,6 +40,14 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
   - Popular software used by bioinformaticians are distributed via PyPi and can easily be incorporated into LatchBio workflows.
   - To do so, create a `requirements.txt` that details the packages to download in the same directory as your `Dockerfile`. Next, add `COPY requirements.txt requirements.txt; RUN pip install -r requirements.txt` to your `Dockerfile`.
   - [snippet](snippets/installing_from_pypi.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_clipkit)
+  - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
+
+- **Download and compile software**
+  - Software can be distributed in tar gzipped directories. The source code often needs to be compiled into binaries, which is often done by executing the command `make install`.
+  - To handle these types of software in a `Dockerfile` for use in a Latch workflow, a series of commands can be strung together to automatically download and compile the workflow. The general steps are the same as when working in the terminal wherein the software is downloaded using something like `curl`, unzipped, and `make` commands are executed. 
+  - [snippet](snippets/download_and_compile_software.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_infer_phylogeny)
+  - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
+ 
 
 ### I/O operations
 
@@ -48,6 +56,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 - **capturing stdout**
     - bioinformaticians are frequently captured the stdout using the `>` character from one software to feed into another. Use this code snippet for writing the stdout to a file and returning the output.
     - [snippet](snippets/capturing_stdout.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_codon_optimization)
+    - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
 
 <br />
 
@@ -55,6 +64,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
     - numerous software will generate multiple output files that have the same prefix
     - the best way to deal with this is by writing them all to a directory and then returning the resulting directory
     - [snippet](snippets/returning_a_directory_of_results.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_infer_phylogeny)
+    - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
 
 <br />
 

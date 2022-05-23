@@ -1,0 +1,8 @@
+# In this example, IQTREE, a phylogenetic
+# tree inference software, is downloaded
+# and compiled for use in a Latch workflow
+
+RUN curl -L https://github.com/iqtree/iqtree2/releases/download/v2.2.0/iqtree-2.2.0-Linux.tar.gz -o iqtree-2.2.0-Linux.tar.gz &&\
+    gunzip -cd iqtree-2.2.0-Linux.tar.gz | tar xfv - &&\
+    mv iqtree-2.2.0-Linux/bin/iqtree2 /usr/bin &&\
+    rm -rf iqtree-2.2.0-Linux iqtree-2.2.0-Linux.tar.gz
