@@ -34,6 +34,15 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 
 ### Dockerfile snippets
 
+#### Installing packages and software
+- **Installing Miniconda**
+  - Anaconda is an extremely useful open source package and environment management system
+  - To install it from a Dockerfile, paste the instruction in the installing_conda.txt file inside your Dockerfile
+  - The commands in the text execute the following tasks:
+    - download and install miniconda in the indicated folder
+    - add the conda binary to the $PATH
+  - Conda can now be used normally (e.g conda install samtools)
+
 #### Installing packages from pypi
 
 - **Installing from PyPi**
