@@ -42,7 +42,8 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
     - download and install miniconda in the indicated folder
     - add the conda binary to the $PATH
   - Conda can now be used normally (e.g conda install samtools)
-
+  - [snippet](snippets/installing_conda.txt) | [example code](Coming soon)
+  - Snippet by: [Matteo Bolner](https://github.com/matteobolner)
 #### Installing packages from pypi
 
 - **Installing from PyPi**
