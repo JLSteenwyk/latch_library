@@ -30,6 +30,15 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 
 ---
 
+### Dockerfile snippets
+
+#### Installing packages from pypi
+
+- **Installing from PyPi**
+  - Popular software used by bioinformaticians are distributed via PyPi and can easily be incorporated into LatchBio workflows.
+  - To do so, create a `requirements.txt` that details the packages to download in the same directory as your `Dockerfile`. Next, add `COPY requirements.txt requirements.txt; RUN pip install -r requirements.txt` to your `Dockerfile`.
+  - [snippet](snippets/installing_from_pypi.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_clipkit)
+
 ### I/O operations
 
 #### Writing out stdout

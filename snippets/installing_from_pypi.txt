@@ -1,0 +1,12 @@
+# to install the following five software
+# create a requirements.txt file with the 
+# following lines
+biopython==1.79
+numpy==1.18
+tqdm==4.45
+cython
+clipkit==1.3.0
+
+# Also, add the following to your Dockerfile
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
