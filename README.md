@@ -51,6 +51,10 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
   - To do so, create a `requirements.txt` that details the packages to download in the same directory as your `Dockerfile`. Next, add `COPY requirements.txt requirements.txt; RUN pip install -r requirements.txt` to your `Dockerfile`.
   - [snippet](snippets/installing_from_pypi.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_clipkit)
   - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
+  - Another option allows you to import subpackages from PyPi directly into your workflow code, also using the 'Dockerfile'. To do so, import the necessary subpackages (e.g. matplotlib, pylab, Bio) into your workflow code
+  - Next, add 'RUN python3 -m pip install matplotlib pylab biopython' to your 'Dockerfile'.
+  - [snippet](snippets/installing_from_pypi_alternative.txt) | [example code](https://github.com/uniformelk1/latch_wf_plotseqdata)
+  - Snippet by: [Pedro Lovatt Garcia](https://github.com/uniformelk1)
 
 - **Download and compile software**
   - Software can be distributed in tar gzipped directories. The source code often needs to be compiled into binaries, which is often done by executing the command `make install`.
