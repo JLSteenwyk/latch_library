@@ -38,22 +38,24 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 
 - **Installing Miniconda**
   - Anaconda is an extremely useful open source package and environment management system
-  - To install it from a Dockerfile, paste the instruction in the installing_conda.txt file inside your Dockerfile
+  - To install it from a `Dockerfile`, paste the instruction in the `installing_conda.txt` file inside your `Dockerfile`
   - The commands in the text execute the following tasks:
-    - download and install miniconda in the indicated folder
-    - add the conda binary to the $PATH
-  - Conda can now be used normally (e.g conda install samtools)
+    - download and install `miniconda` in the indicated folder
+    - add the conda binary to the `$PATH`
+  - Conda can now be used normally (e.g `conda install samtools`)
   - [snippet](snippets/installing_conda.txt) | [example code](Coming soon)
   - Snippet by: [Matteo Bolner](https://github.com/matteobolner)
 
-- **Installing from PyPi**
+- **Installing from PyPi using a requirements.txt file**
   - Popular software used by bioinformaticians are distributed via PyPi and can easily be incorporated into LatchBio workflows.
   - To do so, create a `requirements.txt` that details the packages to download in the same directory as your `Dockerfile`. Next, add `COPY requirements.txt requirements.txt; RUN pip install -r requirements.txt` to your `Dockerfile`.
   - [snippet](snippets/installing_from_pypi.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_clipkit)
   - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
-  - Another option allows you to import subpackages from PyPi directly into your workflow code, also using the 'Dockerfile'. To do so, import the necessary subpackages (e.g. matplotlib, pylab, Bio) into your workflow code
-  - Next, add 'RUN python3 -m pip install matplotlib pylab biopython' to your 'Dockerfile'.
-  - [snippet](snippets/installing_from_pypi_alternative.txt) | [example code](https://github.com/uniformelk1/latch_wf_plotseqdata)
+- **Installing from PyPi without using a requirements.txt file**
+  - Import the necessary subpackages (e.g. matplotlib, pylab, Bio) using the `Dockerfile` of in your workflow 
+  - To do so, specifically add `RUN python3 -m pip install matplotlib pylab biopython` to your `Dockerfile`.
+  - Snippet and example code coming soon!
+  <!-- - [snippet](snippets/installing_from_pypi_alternative.txt) | [example code](https://github.com/uniformelk1/latch_wf_plotseqdata) -->
   - Snippet by: [Pedro Lovatt Garcia](https://github.com/uniformelk1)
 
 - **Download and compile software**
