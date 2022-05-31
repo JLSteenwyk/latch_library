@@ -71,6 +71,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
   - [snippet](snippets/download_and_compile_software.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_infer_phylogeny)
   - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
  
+<br />
 
 ### I/O operations
 
