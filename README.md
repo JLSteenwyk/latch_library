@@ -46,17 +46,24 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
   - [snippet](snippets/installing_conda.txt) | [example code](Coming soon)
   - Snippet by: [Matteo Bolner](https://github.com/matteobolner)
 
+<br />
+
 - **Installing from PyPi using a requirements.txt file**
   - Popular software used by bioinformaticians are distributed via PyPi and can easily be incorporated into LatchBio workflows.
   - To do so, create a `requirements.txt` that details the packages to download in the same directory as your `Dockerfile`. Next, add `COPY requirements.txt requirements.txt; RUN pip install -r requirements.txt` to your `Dockerfile`.
   - [snippet](snippets/installing_from_pypi.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_clipkit)
   - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
+
+<br />
+
 - **Installing from PyPi without using a requirements.txt file**
   - Import the necessary subpackages (e.g. matplotlib, pylab, Bio) using the `Dockerfile` of in your workflow 
   - To do so, specifically add `RUN python3 -m pip install matplotlib pylab biopython` to your `Dockerfile`.
   - Snippet and example code coming soon!
   - [snippet](snippets/installing_from_pypi_alternative.txt) | [example code coming soon!]
   - Snippet by: [Pedro Lovatt Garcia](https://github.com/uniformelk1)
+
+<br />
 
 - **Download and compile software**
   - Software can be distributed in tar gzipped directories. The source code often needs to be compiled into binaries, which is often done by executing the command `make install`.

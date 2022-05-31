@@ -7,6 +7,7 @@ Your contributions are always welcome!
 - Add section if needed.
   - Add section description.
   - Add section title to Table of contents.
+  - Add a line break (`<br />`) between each section
 
 - Snippets
   - The first bullet point should detail a common task or problem
