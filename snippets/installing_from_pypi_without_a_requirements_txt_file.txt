@@ -1,0 +1,6 @@
+# To install, for example,
+# matplotlib, pylab, and biopython, which will
+# be used in your workflow, add the following
+# to your Dockerfile
+​
+RUN python3 -m pip install matplotlib pylab biopython

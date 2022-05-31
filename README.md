@@ -55,7 +55,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
   - Import the necessary subpackages (e.g. matplotlib, pylab, Bio) using the `Dockerfile` of in your workflow 
   - To do so, specifically add `RUN python3 -m pip install matplotlib pylab biopython` to your `Dockerfile`.
   - Snippet and example code coming soon!
-  <!-- - [snippet](snippets/installing_from_pypi_alternative.txt) | [example code](https://github.com/uniformelk1/latch_wf_plotseqdata) -->
+  - [snippet](snippets/installing_from_pypi_alternative.txt) | [example code coming soon!]
   - Snippet by: [Pedro Lovatt Garcia](https://github.com/uniformelk1)
 
 - **Download and compile software**
