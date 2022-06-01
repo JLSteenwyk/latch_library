@@ -22,11 +22,12 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [Dockerfile snippets](#dockerfile-snippets)
-  - [Installing packages and software](#installing-packages-and-software)
-- [I/O operations](#io-operations)
-  - [Writing out stdout](#writing-out-stdout)
-- [Contributors](#contributors)
+- [Table of Contents](#table-of-contents)
+  - [Dockerfile snippets](#dockerfile-snippets)
+    - [Installing packages and software](#installing-packages-and-software)
+  - [I/O operations](#io-operations)
+    - [Writing out stdout](#writing-out-stdout)
+  - [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -89,6 +90,13 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
     - the best way to deal with this is by writing them all to a directory and then returning the resulting directory
     - [snippet](snippets/returning_a_directory_of_results.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_infer_phylogeny)
     - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
+
+<br />
+
+- **Piping stdout to a different command**
+    - Lots of command line tools only take input from the standard input stream, so pipes ("|") are necessary when composing lots of these tools together. Use this snippet for piping the output of one process to the input of another.
+    - [snippet](snippets/piping_output_to_a_command.txt)
+    - Snippet by: [Ayush Kamat](https://github.com/ayushkamat)
 
 <br />
 
