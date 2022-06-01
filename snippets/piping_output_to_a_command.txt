@@ -1,0 +1,25 @@
+# Suppose you want to do something like 
+#  
+#    $ cut -f2,4 data.bim | uniq -f1 > data.uniqueSNPs
+#
+# and pipe the output of one command into another command. One way to do this
+# is by using subprocess.PIPE.
+
+import subprocess
+
+data_file_path = Path("data.bim").resolve()
+output_file_path = Path("data.uniqueSNPs").resolve()
+
+first_process = subprocess.run(
+    ["cut", "-f2,4", data_file_path],
+    check=True,                                 # <-- not strictly necessary, but good practice
+    stdout=subprocess.PIPE,                     # <-- tells subprocess to create a pipe
+)
+
+with open(output_file_path, "wb") as output_file:
+    second_process = subprocess.run(
+        ["uniq", "-f1"],
+        check=True,
+        stdin=first_process.stdout,             # <-- tells subprocess to pipe the output of first_process to the input of this one
+        stdout=output_file,                     # <-- save to the output_file
+    )
