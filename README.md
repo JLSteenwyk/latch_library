@@ -22,12 +22,11 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-  - [Dockerfile snippets](#dockerfile-snippets)
-    - [Installing packages and software](#installing-packages-and-software)
-  - [I/O operations](#io-operations)
-    - [Writing out stdout](#writing-out-stdout)
-  - [Contributors](#contributors)
+- [Dockerfile snippets](#dockerfile-snippets)
+  - [Installing packages and software](#installing-packages-and-software)
+- [I/O operations](#io-operations)
+  - [Writing out stdout](#writing-out-stdout)
+- [Contributors](#contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
