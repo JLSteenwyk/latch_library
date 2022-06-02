@@ -10,7 +10,7 @@ import subprocess
 data_file_path = Path("data.bim").resolve()
 output_file_path = Path("data.uniqueSNPs").resolve()
 
-first_process = subprocess.run(
+first_process = subprocess.Popen(               # <-- use a Popen instead of a run/call
     ["cut", "-f2,4", data_file_path],
     check=True,                                 # <-- not strictly necessary, but good practice
     stdout=subprocess.PIPE,                     # <-- tells subprocess to create a pipe
