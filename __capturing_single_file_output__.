@@ -1,0 +1,23 @@
+import os
+import shutil
+
+os.mkdir("/root/cutadapt") # Create your preffered directory
+
+out_file = Path("out.fasta").resolve()
+
+# write command 
+ _cutadapt_cmd = [
+	 "cutadapt",
+	 "-a",
+	 str(adapter_sequence), 
+	 "-o",
+	 str(out_file),
+	 input_file.local_path,
+ ]
+with open("out_file", "w") as f:
+        subprocess.run(_cutadapt_cmd, stdout=f)
+	shutil.move("/root/out_file", "/root/cutadapt/out_file")	# os.remane() can be used here. Note that in all use case (shutil.move or os.rename(),
+									# the command must end with the file name and extension  e.g file.txt)
+
+
+return LatchDir(str("cutadapt"), out_dir.remote_path) 			# You can now use Latch syntax to return your file. 
