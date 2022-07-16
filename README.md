@@ -101,7 +101,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 
 - **Handling single of few files**
 - Where a tool yields only one file, or where the certain files are need out of many, the os module becomes handy. One approach to handle such movement is throuhg the use of shutil.move() or os.rename(). This can be used even where the bioinformatics tool yields results on the terminal than producing files; In this case, you can write the output in a file then move the file in a preffered directory. 
-- [Snippet] | [Example code](https://github.com/GeOdette/cutadapt.git)
+- [Example code](https://github.com/GeOdette/cutadapt.git)
 - Snippet by: [Geodette](https://github.com/GeOdette)
 ### Contributors
 ![Your Repository's Stats](https://contrib.rocks/image?repo=jlsteenwyk/latch_library)
