@@ -77,6 +77,16 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
   - `R` has proven to be a statistical workhorse for bioinformaticians. The following snippet details how to download and install `R` in your `Dockerfile`.
   - [snippet](snippets/installing_R_in_the_dockerfile.txt)
   - Snippet by: [Jacob L. Steenwyk](https://jlsteenwyk.com/)
+  - Original author: [Akshay Suhuag](https://github.com/aa20g217) in the LatchBio SDK Slack channel.
+
+<br />
+
+
+- **Installing R**
+  - Numerous bioinformatic software is written in `Java`. Latch workflows that use `Java` require download and installation instructions for `Java` to be specified in the `Dockerfile`. Use this code snippet for downloading and installing `Java`.
+  - [snippet](snippets/installing_java_in_the_dockerfile.txt)
+  - Snippet by: [Jacob L. Steenwyk](https://jlsteenwyk.com/)
+  - Original author: [Kenny Workman](https://github.com/kennyworkman) in the LatchBio SDK Slack channel.
 
 <br />
 
