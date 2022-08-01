@@ -1,0 +1,6 @@
+#Install R
+RUN apt install -y dirmngr apt-transport-https ca-certificates software-properties-common gnupg2
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-key '95C0FAF38DB3CCAD0C080A7BDC78B2DDEABC47B7'
+RUN add-apt-repository 'deb https://cloud.r-project.org/bin/linux/debian buster-cran40/'
+RUN apt update
+RUN apt install -y r-base

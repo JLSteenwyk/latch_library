@@ -73,6 +73,13 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
  
 <br />
 
+- **Installing R**
+  - `R` has proven to be a statistical workhorse for bioinformaticians. The following snippet details how to download and install `R` in your `Dockerfile`.
+  - [snippet](snippets/installing_R_in_the_dockerfile.txt)
+  - Snippet by: [Jacob L. Steenwyk](https://jlsteenwyk.com/)
+
+<br />
+
 ### I/O operations
 
 #### Writing out stdout
