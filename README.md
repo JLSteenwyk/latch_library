@@ -52,7 +52,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
   - Popular software used by bioinformaticians are distributed via PyPi and can easily be incorporated into LatchBio workflows.
   - To do so, create a `requirements.txt` that details the packages to download in the same directory as your `Dockerfile`. Next, add `COPY requirements.txt requirements.txt; RUN pip install -r requirements.txt` to your `Dockerfile`.
   - [snippet](snippets/installing_from_pypi.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_clipkit)
-  - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
+  - Snippet by: [Jacob L. Steenwyk](https://jlsteenwyk.com/)
 
 <br />
 
@@ -80,7 +80,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 - **capturing stdout**
     - bioinformaticians are frequently captured the stdout using the `>` character from one software to feed into another. Use this code snippet for writing the stdout to a file and returning the output.
     - [snippet](snippets/capturing_stdout.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_codon_optimization)
-    - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
+    - Snippet by: [Jacob L. Steenwyk](https://jlsteenwyk.com/)
 
 <br />
 
@@ -88,7 +88,7 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
     - numerous software will generate multiple output files that have the same prefix
     - the best way to deal with this is by writing them all to a directory and then returning the resulting directory
     - [snippet](snippets/returning_a_directory_of_results.txt) | [example code](https://github.com/JLSteenwyk/latch_wf_infer_phylogeny)
-    - Snippet by: [Jacob L. Steenwyk](https://github.com/JLSteenwyk)
+    - Snippet by: [Jacob L. Steenwyk](https://jlsteenwyk.com/)
 
 <br />
 
@@ -99,9 +99,12 @@ Become an [SDK contributor](https://latch.bio/sdk)! To join the Slack community,
 
 <br />
 
-- **Handling single of few files**
-- Where a tool yields only one file, or where the certain files are need out of many, the os module becomes handy. One approach to handle such movement is throuhg the use of shutil.move() or os.rename(). This can be used even where the bioinformatics tool yields results on the terminal than producing files; In this case, you can write the output in a file then move the file in a preffered directory. 
-- [Example code](https://github.com/GeOdette/cutadapt.git)
-- Snippet by: [Geodette](https://github.com/GeOdette)
+- **Returning one or a few files**
+  - SDK developers may want to return only one or a few files out of many. In these cases, the shutil.move() or os.rename() functions may be useful.
+  In this example, a specific output file is moved to a preferred directory. 
+  - [snippet](snippets/capturing_single_file_output.txt) | [Example code](https://github.com/GeOdette/cutadapt.git)
+  - Snippet by: [Geodette](https://github.com/GeOdette)
+  - Explanation edited by: [Jacob L. Steenwyk](https://jlsteenwyk.com/)
+
 ### Contributors
 ![Your Repository's Stats](https://contrib.rocks/image?repo=jlsteenwyk/latch_library)
