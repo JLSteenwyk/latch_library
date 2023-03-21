@@ -1,0 +1,33 @@
+from enum import Enum
+from typing import List
+from latch import small_task, workflow, create_conditional_section
+
+class Tasks(Enum):
+    task1 = "task1 selection text (this shows up in the console)"
+    task2 = "task2 selection text (this shows up in the console)"
+
+@small_task
+task_chooser(
+    task: Tasks
+) -> List[bool]:
+    return [task == t for t in Tasks]
+
+@small_task
+task1() -> None:
+
+@small_task
+task2() -> None:
+
+@workflow
+def wf_with_task_chooser(
+    task: Tasks
+    ) -> List[LatchFile]:
+    [is_task1, is_task2] = task_chooser(task=task)
+    return (
+        create_conditional_section("tasks")
+        .if_((is_task1.is_true())).then(
+            task1()
+        .elif_((is_task2.is_true())).then(
+            task2()
+        .else_().fail("Not one of the tasks.")
+    )
